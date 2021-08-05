@@ -8,7 +8,7 @@ path = input("Enter your full path of CSV file: ")
 filename = extractFilename.name(path)
 outputfile = "output-"+str(filename) # The output file will be stored in the same directory as of the code and will start with 'output-'
 
-df = pd.read_csv(filename)
+df = pd.read_csv(path)
 df_new = pd.DataFrame()
 
 for index, row in df.iterrows():
